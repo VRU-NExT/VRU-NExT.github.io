@@ -126,17 +126,10 @@
                 <h3>Submission Format</h3>
                  <p>
                    Due to the limitation of evaluation server, we have changed the submission format this year. The structure of submitted folder is shown as below:
-                    
-                     
-                     result_xz
-                    |——2400171624.xz/
-                    |   |——2400171624
-                    |——2400715506.xz/
-                    |   |——2400715506
-                    |...
-                    |——14040960901.xz/
-                    |   |——14040960901 
-                    
+                 </p>   
+                  <pre id="sample2"></pre>    
+
+                 <p>   
                    Each file (such as 2400171624) is in the following JSON format and then compressed by <a href="https://github.com/NExTplusplus/VidVRD-helper/blob/master/evaluation/README.md">XZ</a>. 
                      The participates should submit a .zip folder (result_xz.zip). 
                      A sample submission file is available <a href="xxxxx">HERE</a>.   
@@ -210,6 +203,17 @@
             "    details: \"First fully-connected layer from VGG-16 pre-trained on ILSVRC-2012 training set\" # This string details what kind of external data you used and how you used it.\n" +
             "  }\n" +
             "}";
+            $('#sample').html(syntaxHighlight(sample));
+        </script>
+        <script type="text/javascript">
+            const sample2 = "result_xz" +
+            "|——2400171624.xz/\n" +
+            "|   |——2400171624\n" +
+            "|——2400715506.xz/\n" +
+            "|   |——2400715506\n" +
+            "...\n" +
+            "|——14040960901.xz/\n" +
+            "|   |——14040960901\n" +
             $('#sample').html(syntaxHighlight(sample));
         </script>
         <script type="text/x-mathjax-config">
