@@ -127,7 +127,31 @@
                  <p>
                    Due to the limitation of evaluation server, we have changed the submission format this year. The structure of submitted folder is shown as below:
                  </p>   
-                  <pre id="sample2"></pre>    
+                <p>
+                result_xz
+                </p>
+                <p>
+                |——2400171624.xz/
+                </p>
+                <p>
+                |   |——2400171624
+                </p>
+                <p>
+                |——2400715506.xz/
+                </p>
+                <p>
+                |   |——2400715506
+                </p>
+                <p>
+                ...
+                </p>
+                <p>
+                |——14040960901.xz/
+                </p>
+                <p>
+                |   |——14040960901
+                </p> 
+                
 
                  <p>   
                    Each file (such as 2400171624) is in the following JSON format and then compressed by <a href="https://github.com/NExTplusplus/VidVRD-helper/blob/master/evaluation/README.md">XZ</a>. 
@@ -205,17 +229,7 @@
             "}";
             $('#sample').html(syntaxHighlight(sample));
         </script>
-        <script type="text/javascript">
-            const sample2 = "result_xz" +
-            "|——2400171624.xz/\n" +
-            "|   |——2400171624\n" +
-            "|——2400715506.xz/\n" +
-            "|   |——2400715506\n" +
-            "...\n" +
-            "|——14040960901.xz/\n" +
-            "|   |——14040960901\n" +
-            $('#sample').html(syntaxHighlight(sample));
-        </script>
+
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
               tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
