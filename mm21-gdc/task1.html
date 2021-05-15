@@ -124,16 +124,28 @@
         <section id="submission" class="scrollable-section">
             <div class="container">
                 <h3>Submission Format</h3>
-                <p>
-                    Please use the following JSON format to submit your results to the submission server.
-                    Before uploading the result, please compress the JSON file using 
-                    <a href="https://github.com/NExTplusplus/VidVRD-helper/blob/master/evaluation/README.md">XZ</a>
-                    and make sure the final file size not exceed 100MB.
-                </p>
+                 <p>
+                   Due to the limitation of evaluation server, we have changed the submission format this year. The structure of submitted folder is shown as below:
+                    result_xz
+                    |——2400171624.xz/
+                    |   |——2400171624
+                    |——2400715506.xz/
+                    |   |——2400715506
+                    |...
+                    |——14040960901.xz/
+                    |   |——14040960901 
+                    
+                   Each file (such as 2400171624) is in the following JSON format and then compressed by <a href="https://github.com/NExTplusplus/VidVRD-helper/blob/master/evaluation/README.md">XZ</a>. 
+                     The participates should submit a .zip folder (result_xz.zip). 
+                     A sample submission file is available <a href="xxxxx">HERE</a>.   
+                     
+                </p>  
+                
+   
                 <pre id="sample"></pre>
                 <p>
                     The example above is illustrative. Comments must be removed in your submission.
-                    A sample submission file is available <a href="assets/submission-task1.json">here</a>.
+               
                 </p>
             </div>
         </section>
